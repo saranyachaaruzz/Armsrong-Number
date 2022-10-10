@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong number styling</title>
+
+    <style>
+
+div{
+        background-image: url(https://i.pinimg.com/474x/4e/42/0f/4e420f062057cfed87e1797f3a205f64.jpg);
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 650px;
+        width: 900px;
+        margin: 20px 300px 300px 200px;
+        
+        
+    }
+    #d1{
+        
+         background-color:white;
+            height: 500px;
+            width: 500px;
+            margin: 00px 200px 200px 200px;
+            
+       } 
+       .check{
+            background-color: rgb(80, 25, 66);
+            width: 56%;
+            color: beige;
+            font-size: large;
+            border: none;
+        }
+    </style>
+</head>
+<body><br><br>
+    <br><br>
+
+    <div><br><br><br>
+
+            <div id="d1"><br><br><br>
+
+                <center>
+                <label for="">Enter Number</label><input type="text" id="n1"><br><br><br>
+
+    <button onclick="CheckArmsrong()" class="check">Check</button>
+    <p id="result"></p>
+</center>
+
+            
+        </div>
+    </div>
+    <script>
+
+        function CheckArmsrong()
+
+        {
+
+var arm=0,a,b,c,d,num;
+num=Number(document.getElementById("n1").value);
+
+temp=num;
+while(temp>0)
+{
+a=temp%10;
+temp=parseInt(temp/10);
+arm=arm+a*a*a;
+}
+if(arm==num)
+{
+    
+alert("Armstrong number");
+}
+else
+{
+
+    
+alert("Not Armstrong number");
+}
+}
+
+
+        
+    </script>
+    
+
+
+    
+    
+</body>
+</html>
